@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIRØ KOLLECTTIVE</title>
+    <link rel="stylesheet" href="css/about us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    </head>
+    <body>
+      <header class="header" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #222; color: white;">
+  <div class="left" style="font-size: 1.5rem; font-weight: bold;">
+   <a href="homePage.html" class="logo" style="text-decoration: none; color: #344f82;">KAIRØ KOLLECTIVE.</a>
+  </div>
+  <div class="center" style="font-size: 1.2rem; height: 30px; overflow: hidden; position: relative;">
+    <div id="nameSlide" style="transition: opacity 0.5s;"></div>
+  </div>
+  <div class="right" style="display: flex; gap: 1rem;">
+    <a href="cart.html" class="right"><i class="fas fa-shopping-cart icon" style="color: white;"></i></a>
+    <a href="homePage.html" class="right"><i class="fas fa-home icon" style="color: white;"></i></a>
+  </div>
+</header>
+
+<script>
+<<<<<<< Updated upstream
+  const names = ["Ahmed Farghaly", "Hamza Ibrahim", "Abdullah Mehany", "Abdelrahman Ehab", "Abdelrahman Hany", "Abdelrahman El-Shahed", "Basel EL-Gammal" , "Anas Adel", "Hamza Abdelmeged"];
+=======
+  const names = ["Ahmed Farghaly", "Hamza Ebrahim", "Abdullah Mehany", "Abdelrahman Ehab", "Abdelrahman Hany", "Abdelrahman El-Shahed", "Basel EL-Gammal" , "Anas Adel", "Hamza Abdelmeged"];
+>>>>>>> Stashed changes
+  let index = 0;
+
+  function rotateNames() {
+    const nameSlide = document.getElementById("nameSlide");
+    nameSlide.style.opacity = 0;
+    setTimeout(() => {
+      nameSlide.innerText = names[index];
+      nameSlide.style.opacity = 1;
+      index = (index + 1) % names.length;
+    }, 500);
+  }
+
+  setInterval(rotateNames, 2000);
+  window.onload = rotateNames;
+</script>
+
+       <div class="heading">
+        <h1>About Us</h1>
+        <p>At KAIRO KOLLECTIVE, we believe that style should be accessible to everyone. Founded in the heart of Egypt, our mission is to bring the world’s most iconic fashion brands—like Nike, Adidas, Lacoste, and more—together in one place, at prices that don’t break the bank. We are more than just a store; we are a collective that values authenticity, affordability, and accessibility. Whether you're chasing performance, comfort, or street style, KAIRO KOLLECTIVE connects you with global trends while keeping your budget in mind. Fashion without limits—right here, close to home.</p>
+       </div>
+         <div class="container">
+            <section class="about">
+                <div class="video">
+                    
+                    <video id="video" loop preload="auto"autoplay muted controls>
+<<<<<<< Updated upstream
+                        <source src="WhatsApp Video 2025-05-10 at 11.48.13_0e40b626.mp4" type="video/mp4">
+=======
+                        <source src="WhatsApp Video 2025-05-10 at 11.48.13_0289ffb6.mp4" type="video/mp4">
+>>>>>>> Stashed changes
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="content">
+                    <h2>Our Story</h2>
+                    <p>We’re a group of Egyptian friends with one shared dream: to make life easier for our people. Born and raised here, we’ve seen firsthand how hard it can be to access quality products without overpaying or compromising. That’s why we started KAIRO KOLLECTIVE—a space where you can find everything you need, from global fashion brands to everyday essentials, all in one place and at fair prices. Our journey is driven by heart, community, and the belief that helping others starts at home.<br><strong>ALL YOUR NEEDS IN ONE PLACE</strong> —that’s not just our slogan; it’s our promise.</p>
+                       <a href="" class="Read-more">Read More</a>
+                </div>
+            </section>
+
+            
+        </body>
+        </html>  

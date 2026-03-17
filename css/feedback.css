@@ -1,0 +1,63 @@
+.feedback-boxes{
+    flex: 1;
+    width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-name{
+    font-weight: 750;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+}
+#comment-input{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+h1{
+    font-weight: 400;
+    font-size: 60px;
+    font-family:fantasy;
+    letter-spacing: -1px;
+}
+.submit-button {
+    padding: 5px 15px;
+    background-color: #f7e9da;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.submit-button:hover{
+    background-color: papayawhip;
+}
+#feedback-logo {
+    font-size: 40px;
+    font: 60px;
+    font-family:fantasy;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.logo {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+
+}
+.main-input{
+    display: block;
+     align-items: center;
+     margin-bottom: 10px;
+     margin-left: 400px;
+}
+#feed-email{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+#feed-name{
+    margin-left: 75px;
+}

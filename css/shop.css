@@ -1,0 +1,419 @@
+/* ===================the navbar css ============================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 30px;
+   border-bottom: 1px solid #ccc;
+   margin: 0;
+ }
+ .left , .right {
+   display: flex;
+   align-items: center;
+   color: #000;
+ }
+ .left , .right:hover{
+  color: #344f82;
+ }
+ .left input {
+   padding: 9px;
+   padding-left: 40px;
+   border: none;
+   border-bottom: 1px solid #4a7eb5;
+   font-size: 14px;
+   color: #fff;
+  }
+
+ .left .search-icon {
+   position: absolute;
+   margin-left: 30px;
+   margin: 5px;
+   color: #000;
+ }
+ .left .search-icon:hover{
+  color: #344f82;}
+ .center {
+   text-align: center;
+ }
+ .center img {
+   height: 40px;
+ }
+ .nav-links {
+   margin-left: 400px;
+   font-size: 14px;
+   font-weight: 700;
+ }
+ .nav-links a {
+   margin-left: 15px;
+   text-decoration: none;
+   color: #000;
+   transition: 1.5s ease;
+   font-weight: 900px;
+ }
+ .nav-links a:hover {
+   color: #344f82;
+   transform: scale(1.2);
+   transition: 0.5s ease;
+ }
+ .right .icon {
+   margin-left: 15px;
+   font-size: 20px;
+   cursor: pointer;
+ }
+ .relative {
+   position: relative;
+ }
+
+ .logo {
+  text-decoration: none;
+  color: #6761da;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-30%);
+  
+  transition: 1.5s ease;
+
+}
+.logo:hover {
+  color: #164397;
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+ /* ============================the body css==================== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #fff;
+    background-position: -200px top;
+
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 300px;
+  }
+
+  .product-card {
+    text-align: center;
+    width: 200px;
+    height: 300px;
+  }
+
+  .product-card img {
+    width: 175px;
+    height: 175px;
+    border-radius: 8px;
+  }
+
+  .category {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #888;
+    margin-top: 10px;
+  }
+
+  .product-name {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+
+  .price {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+/* ==========================animations===================== */
+.products{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.products-grid {
+display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+.product-card {
+   background-color:white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.product-card.left-align{
+  margin-left: 50px;
+}
+.product-card.right-align{
+  margin-right: 50px;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+  }
+/* prada  */
+
+  /* .background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  } */
+  .products-PRADA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-grid-PRADA {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 600px;
+}
+
+.product-card-PRADA {
+  text-align: center;
+  width: 200px;
+  height: 300px;
+}
+
+.product-card-PRADA img {
+  width: 175px;
+  height: 175px;
+  border-radius: 8px;
+}
+
+.category {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.product-name-PRADA {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.logobrands1{
+  text-decoration: none;
+  color:  #c9bb97;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+.nav-links1 {
+  margin-left: 400px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.nav-links1 a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #c9bb97;
+  transition: 1.5s ease;
+  font-weight: 900px;
+}
+.nav-links a:hover {
+  /* color:; */
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+.right1 .icon {
+  margin-left: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.left , .right1 {
+  display: flex;
+  align-items: center;
+  color: #c9bb97;
+}
+.left .input1 {
+  padding: 9px;
+  padding-left: 40px;
+  border: none;
+  /* border-bottom: 1px solid #4a7eb5; */
+  font-size: 14px;
+  background-color: black;
+  color: #c9bb97;
+ }
+
+.left .search-icon1 {
+  position: absolute;
+  margin-left: 30px;
+  margin: 5px;
+  color: #c9bb97;
+}
+/* .left .search-icon1:hover{
+ color : #c9bb97;
+.center {
+  text-align: center;
+} */
+.search-input1 {
+  background-color: rgb(38, 38, 38); 
+  color: #c9bb97; 
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-input1::placeholder {
+  color: #c9bb97; 
+  opacity: 0.8; 
+}
+.relative {
+  position: relative;
+}
+/* ==========================animations===================== */
+.products-PRADA{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.products-grid-PRADA {
+display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+.product-card-PRADA {
+ background-color:black;
+  width: 21.25em;
+  box-shadow: 0 5px 25px white(1 1 1 / 15%);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.product-card-PRADA{
+margin-left: -50px;
+}
+.product-card-PRADA.right-align{
+margin-right: -50px;
+}
+
+.product-card-PRADA:hover {
+  transform: scale(1.1);
+}
+
+
+
+ /* ========================================scrollbar css======================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bfd0e3;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #4a7eb5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #344f82;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #bfd0e3;
+  background-size: 10px 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button:end:increment {
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQwNC4zMDggNDA0LjMwOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDA0LjMwOCA0MDQuMzA5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTAsMTAxLjA4aDQwNC4zMDhMMjAyLjE1MSwzMDMuMjI5TDAsMTAxLjA4eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+}
+
+::-webkit-scrollbar-button:start:decrement {
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI1NSAyNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1NSAyNTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iYXJyb3ctZHJvcC11cCI+CgkJPHBvbHlnb24gcG9pbnRzPSIwLDE5MS4yNSAxMjcuNSw2My43NSAyNTUsMTkxLjI1ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+
+  /*============
+logossss
+============*/
+.logobrands {
+  text-decoration: none;
+  color:#344f82;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+.background{
+  background-position: 50px top;
+}
+.nikelogo{
+  text-decoration: none;
+  color:#000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+/*=====table=====*/
+.size-chart{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 1080px;
+  text-align: center;
+  table-layout: fixed;
+  margin-left: 100px;
+  height: 250px;
+}
+.size-chart td,.size-chart th{
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 8px;
+  width: 25%;
+}
+#t-head{
+  height:60px;
+  width: 30%;
+}
+.size-chart thead{
+background-color: #bfd0e3;
+}
+.size-chart tbody tr:nth-child(even){
+  background-color: #f9f9f9;
+}
+.size-chart td:hover{
+  background-color: #ddd;
+}

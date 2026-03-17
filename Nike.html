@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike-KAIRØ KOLLECTIVE</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/nike.css">
+<link rel="icon" type ="image/png" href="css/images/iconLogo2edited.png" sizes="16x16">
+
+</head>
+<body background="css/images/backgroundnike.jpg" class="background">
+ 
+  <header class="header">
+    <div class="nikelogo">
+      <span>NIKE.</span>
+      <img src="css/icons8-nike-50.png" class="nikeicon">
+    </div>
+      <div class="left relative">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" placeholder="What are you looking for?" class="search-input" onkeyup="search()"/>
+    </div>
+      <div class="center">
+        <div class="nav-links">
+          <a href="signup.html">Sign Up</a>
+          <a href="signin.html">Login</a>
+        </div>     
+      </div>
+      <div class="right">
+        <!-- <i class="far fa-heart icon"></i> -->
+        <a href="cart.html" class="right">      <i class="fas fa-shopping-bag icon"></i>  </a>
+        <a href="homePage.html" class="right">  <i class="fas fa-home icon"></i>  </a> 
+      </div>
+  </header>
+
+ <div id="product_list"></div>
+ <section class="product-grid-nike">
+  <div class="products-nike">
+    <div class="product-card-nike left-align" onclick="window.location.href='product.html?id=black-tech'"  style="cursor:pointer;">
+      <img src="css/images/Nike products/black nike tech.jpg" alt="Black Nike Tech Jacket">
+      <p class="category">Jackets</p>
+      <h3 class="product-name">Black Nike Tech Jacket</h3>
+      <p class="price">LE 900.00</p>
+    </div>
+
+    <div class="product-card-nike" onclick="window.location.href='product.html?id=grey-jacket'"  style="cursor:pointer;">
+      <img src="css/images/Nike products/grey nike tech.jpg" alt="Grey Nike Tech Jacket">
+      <p class="category">Jackets</p>
+      <h3 class="product-name">Grey Nike Tech Jacket</h3>
+      <p class="price">LE 900.00</p>
+    </div>
+
+    <div class="product-card-nike" onclick="window.location.href='product.html?id=black-shirt'"  style="cursor:pointer;">
+      <img src="css/images/Nike products/black sirt.jpg" alt="Basic Black T-shirt">
+      <p class="category">Shirts</p>
+      <h3 class="product-name">Nike Basic Black T-shirt</h3>
+      <p class="price">LE 500.00</p>
+    </div>
+
+    <div class="product-card-nike" onclick="window.location.href='product.html?id=black-pants'"  style="cursor:pointer;">
+      <img src="css/images/Nike products/black sweatpants.jpg" alt="Black Sweatpants">
+      <p class="category">Pants</p>
+      <h3 class="product-name">Nike Black Sweatpants</h3>
+      <p class="price">LE 750.00</p>
+    </div>
+  </div>
+</section>
+  
+<!-- <script src="shop.js"></script> -->
+   <script> 
+    const products = [
+    {
+      id: "black-tech",
+      name: "Black Nike Tech",
+      image: "css/images/Nike products/black nike tech.jpg",
+      price: 900,
+      originalPrice: 1100,
+      sizes: ["M", "L", "XL"],
+      description: "Zippered hoodie made with tech fleece fabric."
+    },
+    {
+      id: "grey-jacket",
+      name: "Grey Nike Tech Jacket",
+      image: "css/images/Nike products/grey nike tech.jpg",
+      price: 900,
+      sizes: ["M", "L"],
+      description: "Stylish grey jacket with modern fit."
+    },
+    {
+      id: "black-shirt",
+      name: "Nike Basic Black T-shirt",
+      image: "css/images/Nike products/black sirt.jpg",
+      price: 500,
+      sizes: ["S", "M", "L"],
+      description: "Basic cotton tee with Nike logo."
+    },
+    {
+      id: "black-pants",
+      name: "Nike Black Sweatpants",
+      image: "css/images/Nike products/black sweatpants.jpg",
+      price: 750,
+      sizes: ["M", "L", "XL"],
+      description: "Comfortable and casual sweatpants."
+    }
+  ];
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacoste Product Details</title>
+    <link rel="stylesheet" href="css/black tech.css">
+  </head>
+<body>
+
+  <header>
+    <div>
+      <a href="homePage.html" class="logo">KAIRØ KOLLECTIVE.</a>
+    </div>
+    <div class="header-icons">
+      <a href="search.html">
+        <img
+          src="css/images/computer-icons-desktop-wallpaper-web-search-engine-wordpress-com-clip-art-png-search-download-icon-fc5c6aef7fd1319a8263dac456eb5c4a.png"
+          alt="Search" height="20px" width="20px">
+      </a>
+      <a href="wishlist.html">
+        <img src="css/images/Untitled.png" alt="Wishlist" height="20px" width="20px">
+      </a>
+      <a href="cart.html">
+        <img src="css/images/cart.png" alt="Cart" height="20px" width="20px">
+      </a>
+    </div>
+  </header>
+  <div id="products-lacoste"></div>
+  <script>
+    const products = [
+      {
+        id: "dark-blue-sweatshirt",
+        name: "Lacoste Dark Blue Sweatshirt",
+        image: "css/images/Lacoste/Dark Blue Crew Neck Sweatshirt.jpg",
+        price: 1370,
+        sizes: ["S", "M", "L"],
+        description: "Comfortable and stylish dark blue sweatshirt."
+      },
+      {
+        id: "grey-sweatshirt",
+        name: "Lacoste Grey Sweatshirt",
+        image: "css/images/Lacoste/Grey Crew Neck Sweatshirt.jpg",
+        price: 1370,
+        sizes: ["S", "M", "L"],
+        description: "Classic grey sweatshirt with a modern fit."
+      },
+      {
+        id: "grey-sweatjacket",
+        name: "Lacoste Grey Sweatjacket",
+        image: "css/images/Lacoste/Grey Sweatjacket.jpg",
+        price: 1440,
+        sizes: ["M", "L", "XL"],
+        description: "Stylish grey sweatjacket for casual wear."
+      },
+      {
+        id: "black-slippers",
+        name: "Lacoste Black Slippers",
+        image: "css/images/Lacoste/Black Slippers.jpg",
+        price: 750,
+        sizes: ["8", "9", "10"],
+        description: "Comfortable black slippers for everyday use."
+      },
+      {
+        id: "basic-tshirt",
+        name: "Basic Lacoste T-shirt",
+        image: "css/images/Lacoste/IMG-20250420-WA0025.jpg",
+        price: 900,
+        sizes: ["S", "M", "L"],
+        description: "Basic Lacoste T-shirt with a classic design."
+      },
+      {
+        id: "printed-tshirt",
+        name: "Lacoste Printed T-shirt Classic-Fit",
+        image: "css/images/Lacoste/Printed T-shirt Classic-Fit.jpg",
+        price: 700,
+        sizes: ["S", "M", "L"],
+        description: "Classic-fit printed T-shirt with Lacoste branding."
+      },
+      {
+        id: "dark-blue-hoodie",
+        name: "Lacoste Dark Blue Zip Hoodie",
+        image: "css/images/Lacoste/Dark Blue Zip Hoodie.jpg",
+        price: 1200,
+        sizes: ["M", "L", "XL"],
+        description: "Dark blue zip hoodie for a casual look."
+      },
+      {
+        id: "sport-cap",
+        name: "Lacoste Unisex SPORT Cap",
+        image: "css/images/Lacoste/Unisex SPORT Cap.jpg",
+        price: 380,
+        sizes: ["One Size"],
+        description: "Unisex sport cap with Lacoste logo."
+      }
+    ];
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get("id");
+    const product = products.find(p => p.id === productId);
+    const detailsDiv = document.getElementById("products-lacoste");
+    if (product) {
+      detailsDiv.innerHTML = `
+        <div class="container">
+          <div class="image-box">
+            <img src="${product.image}" alt="${product.name}">
+          </div>
+          <div class="details-box">
+            <h1>${product.name}</h1>
+            <p class="price">LE ${product.price.toLocaleString()}</p>
+            <p><strong>Sizes:</strong> ${product.sizes.join(", ")}</p>
+            <p><strong>Description:</strong> ${product.description}</p>
+            <button class="buy-btn" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      `;
+    } else {
+      detailsDiv.innerHTML = "<p>Product not found.</p>";
+    }
+    function addToCart() {
+      const selectedSize = document.getElementById("size-select")?.value || "One Size";
+      const cartItem = {
+        id: product.id,
+        name: product.name,
+        image: product.image,
+        price: product.price,
+        size: selectedSize,
+        quantity: 1
+      };
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const existingItem = cart.find(item => item.id === product.id && item.size === selectedSize);
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push(cartItem);
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+      window.location.href = "cart.html"; 
+    }
+
+  </script>
+
+<footer>
+    <div class="fot">
+      <a href="homePage.html" class="logof">KAIRØ KOLLECTIVE.</a>
+      <h4>Contact</h4>
+      <p><strong>Email:</strong> KairokOllectiVe2025@gmail.com</p>
+      <p><strong>Phone:</strong>+20 109 987 1127</p>
+      <p><strong>Address:</strong> Cairo, Egypt</p>
+      <p><strong>Hours:</strong>01:30 PM - 02:00 AM, Sat - Thu</p>
+      <div class="fol">
+        <h4>follow us</h4>
+        <a href="https://www.instagram.com/amm077_?igsh=MWxuNzdiazNlOXk4Zg=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/12J2npFyzXR/"><i class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+    <div class="fot">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms of service</a>
+      <a href="#">Refund policy</a>
+    </div>
+    <div class="fot">
+      <h4>My Account</h4>
+      <a href="signup.html">sign up</a>
+      <a href="signin.html">login</a>
+      <a href="#">My orders</a>
+      <a href="#">My wishlist</a>
+      <a href="#">My cart</a>
+    </div>
+    <div class="fot install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="css/images/app.jpg" alt="">
+        <img src="css/images/play.jpg" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="css/images/pay.png" alt="">
+    </div>
+    <div class="cr">
+      <p>&copy; KAIRØ KOLLECTIVE. All rights reserved.</p>
+    </div>
+
+  </footer>
+</body>
+</html>

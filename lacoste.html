@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lacoste-KAIRØ KOLLECTIVE</title>
+  <link rel="stylesheet" href="css/lacoste.css">
+  <link rel="icon" type ="image/png" href="css/images/iconLogo2edited.png" sizes="16x16">
+  
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/lacoste.css">
+</head>
+
+<body>
+  <header>
+    <header class="header">
+      <div class="logo">
+        <img src="css/images/Lacoste/lacoste.jpg">
+      
+      </div>
+      <div class="left relative">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" placeholder="What are you looking for?" class="search-input" onkeyup="search()" />
+    </div>
+    <div class="logobrands">LACOSTE.</div>
+      <div class="center">
+        <div class="nav-links">
+          <a href="signup.html">Sign Up</a>
+          <a href="signin.html">Login</a>
+        </div> 
+        
+      </div>
+      <div class="right">
+        <!-- <i class="far fa-heart icon"></i> -->
+       <a href="cart.html"><i class="fas fa-shopping-bag icon"></i></a> 
+      <a href="homePage.html" class="right">  <i class="fas fa-home icon"></i>  </a> 
+      </div>
+    </header>
+
+</header>
+<section class="product-grid">
+  <div class="products">
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=dark-blue-sweatshirt'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/Dark Blue Crew Neck Sweatshirt.jpg" alt="Dark Blue Sweatshirt">
+      <p class="category">Shirts</p>
+      <h3 class="product-name">Lacoste Dark Blue Sweatshirt</h3>
+      <p class="price">LE 1370.00</p>
+    </div>
+
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=grey-sweatshirt'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/Grey Crew Neck Sweatshirt.jpg" alt="Grey Sweatshirt">
+      <p class="category">Shirts</p>
+      <h3 class="product-name">Lacoste Grey Sweatshirt</h3>
+      <p class="price">LE 1370.00</p>
+    </div>
+
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=grey-sweatjacket'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/Grey Sweatjacket.jpg" alt="Grey Sweatjacket">
+      <p class="category">Jackets</p>
+      <h3 class="product-name">Lacoste Grey Sweatjacket</h3>
+      <p class="price">LE 1440.00</p>
+    </div>
+
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=black-slippers'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/Black Slippers.jpg" alt="Black Slippers">
+      <p class="category">Slippers</p>
+      <h3 class="product-name">Lacoste Black Slippers</h3>
+      <p class="price">LE 750.00</p>
+    </div>
+
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=basic-tshirt'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/IMG-20250420-WA0025.jpg" alt="Basic Lacoste T-shirt">
+      <p class="category">Shirts</p>
+      <h3 class="product-name">Basic Lacoste T-shirt</h3>
+      <p class="price">LE 900.00</p>
+    </div>
+
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=printed-tshirt'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/Printed T-shirt Classic-Fit.jpg" alt="Printed T-shirt Classic-Fit">
+      <p class="category">Shirts</p>
+      <h3 class="product-name">Lacoste Printed T-shirt Classic-Fit</h3>
+      <p class="price">LE 700.00</p>
+    </div>
+
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=dark-blue-hoodie'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/Dark Blue Zip Hoodie.jpg" alt="Dark Blue Zip Hoodie">
+      <p class="category">Hoodies</p>
+      <h3 class="product-name">Lacoste Dark Blue Zip Hoodie</h3>
+      <p class="price">LE 1200.00</p>
+    </div>
+
+    <div class="product-card" onclick="window.location.href='lacoste-prod.html?id=sport-cap'"  style="cursor:pointer;">
+      <img src="css/images/Lacoste/Unisex SPORT Cap.jpg" alt="Unisex SPORT Cap">
+      <p class="category">Caps</p>
+      <h3 class="product-name">Lacoste Unisex SPORT Cap</h3>
+      <p class="price">LE 380.00</p>
+    </div>
+  </div>
+</section>
+<script>
+  const products = [
+    {
+      id: "dark-blue-sweatshirt",
+      name: "Lacoste Dark Blue Sweatshirt",
+      image: "css/images/Lacoste/Dark Blue Crew Neck Sweatshirt.jpg",
+      price: 1370,
+      sizes: ["S", "M", "L"],
+      description: "Comfortable and stylish dark blue sweatshirt."
+    },
+    {
+      id: "grey-sweatshirt",
+      name: "Lacoste Grey Sweatshirt",
+      image: "css/images/Lacoste/Grey Crew Neck Sweatshirt.jpg",
+      price: 1370,
+      sizes: ["S", "M", "L"],
+      description: "Classic grey sweatshirt with a modern fit."
+    },
+    {
+      id: "grey-sweatjacket",
+      name: "Lacoste Grey Sweatjacket",
+      image: "css/images/Lacoste/Grey Sweatjacket.jpg",
+      price: 1440,
+      sizes: ["M", "L", "XL"],
+      description: "Stylish grey sweatjacket for casual wear."
+    },
+    {
+      id: "black-slippers",
+      name: "Lacoste Black Slippers",
+      image: "css/images/Lacoste/Black Slippers.jpg",
+      price: 750,
+      sizes: ["8", "9", "10"],
+      description: "Comfortable black slippers for everyday use."
+    },
+    {
+      id: "basic-tshirt",
+      name: "Basic Lacoste T-shirt",
+      image: "css/images/Lacoste/IMG-20250420-WA0025.jpg",
+      price: 900,
+      sizes: ["S", "M", "L"],
+      description: "Basic Lacoste T-shirt with a classic design."
+    },
+    {
+      id: "printed-tshirt",
+      name: "Lacoste Printed T-shirt Classic-Fit",
+      image: "css/images/Lacoste/Printed T-shirt Classic-Fit.jpg",
+      price: 700,
+      sizes: ["S", "M", "L"],
+      description: "Classic-fit printed T-shirt with Lacoste branding."
+    },
+    {
+      id: "dark-blue-hoodie",
+      name: "Lacoste Dark Blue Zip Hoodie",
+      image: "css/images/Lacoste/Dark Blue Zip Hoodie.jpg",
+      price: 1200,
+      sizes: ["M", "L", "XL"],
+      description: "Dark blue zip hoodie for a casual look."
+    },
+    {
+      id: "sport-cap",
+      name: "Lacoste Unisex SPORT Cap",
+      image: "css/images/Lacoste/Unisex SPORT Cap.jpg",
+      price: 380,
+      sizes: ["One Size"],
+      description: "Unisex sport cap with Lacoste logo."
+    }
+  ];
+
+  // // Dynamically render product cards
+  // const productGrid = document.querySelector(".products");
+  // products.forEach(product => {
+  //   const productCard = document.createElement("div");
+  //   productCard.classList.add("product-card");
+  //   productCard.innerHTML = `
+  //     <img src="${product.image}" alt="${product.name}">
+  //     <p class="category">${product.description.split(" ")[0]}</p>
+  //     <h3 class="product-name">${product.name}</h3>
+  //     <p class="price">LE ${product.price.toLocaleString()}</p>
+  //   `;
+  //   productCard.onclick = () => {
+  //     window.location.href = `product.html?id=${product.id}`;
+  //   };
+  //   productGrid.appendChild(productCard);
+  // });
+</script>
+</body>
+</html>

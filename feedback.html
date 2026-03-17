@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Feedback-KAIRØ KOLLECTIVE</title>
+        <link rel="stylesheet" href="css/feedback.css">
+        <link rel="icon" type="image/png" href="css/images/iconLogo2edited.png" sizes="16x16">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+<body background="css/images/feedback.jpg" class="background">
+    <h1>Give us your feedback!</h1>
+    <section class="feedback-main">
+        <a id="feedback-logo" href="homePage.html" class="logo">KairØ Kollective .
+        </a>
+    <div>
+        <form id="feedbackForm">
+         <div class="main-input">
+            <div>
+                <label class="input-name">Name </label>
+                <input id="feed-name" class="feedback-boxes" type="text" placeholder="Your name" name="name" required>
+            </div>
+            <div>
+                <label class="input-name">Email </label>
+                <input id="feed-email" class="feedback-boxes" type="email" placeholder="Your email" name="email" required>
+            </div>
+            <div>
+                <label class="input-name">Comments </label>
+                <input id="comment-input" class="feedback-boxes" type="text" placeholder="Give us your honest opinion!" name="Comments" required>
+            </div>
+            <div>   
+                <input class="submit-button" type="submit">
+            </div> 
+         </div>  
+        </form>
+    </div>
+    <script>
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+    
+          const name = document.getElementById("feed-name").value;
+          const email = document.getElementById("feed-email").value;
+          const comments = document.getElementById("comment-input").value;
+          alert("Thank you, " + name + "! Your feedback was: " + comments);
+        });
+      </script>
+</body>
+</html>
